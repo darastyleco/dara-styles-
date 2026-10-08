@@ -1,22 +1,49 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101010">
 <title>Dara Styles — Shop My Looks</title>
 <style>
-:root{--bg:#0d0d0e;--panel:#151517;--text:#f3f0ea;--muted:#aaa6a0;--line:#2b2a2d;--accent:#ded8cf}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif}.wrap{max-width:980px;margin:auto;padding:32px 20px 70px}header{display:flex;justify-content:space-between;align-items:end;border-bottom:1px solid var(--line);padding:12px 0 26px;margin-bottom:44px}.brand{font-family:Georgia,serif;font-size:34px;letter-spacing:.12em}.tag{color:var(--muted);font-size:13px;letter-spacing:.08em;text-transform:uppercase}.hero{margin:45px 0 55px}.hero h1{font-family:Georgia,serif;font-size:clamp(44px,8vw,86px);font-weight:400;line-height:.95;margin:0 0 18px}.hero p{max-width:570px;color:var(--muted);font-size:17px;line-height:1.6}.look{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;background:var(--panel);border:1px solid var(--line);padding:20px;margin-bottom:28px}.image{min-height:470px;background:linear-gradient(145deg,#27262a,#121214);display:flex;align-items:center;justify-content:center;text-align:center;color:#8d8984;padding:30px}.eyebrow{font-size:12px;color:var(--muted);letter-spacing:.16em;text-transform:uppercase}.look h2{font-family:Georgia,serif;font-size:34px;font-weight:400;margin:9px 0 10px}.desc{color:var(--muted);line-height:1.55;margin-bottom:26px}.item{display:flex;align-items:center;justify-content:space-between;padding:15px 0;border-top:1px solid var(--line);gap:15px}.item a{color:var(--bg);background:var(--accent);text-decoration:none;padding:9px 13px;font-size:12px;font-weight:bold;letter-spacing:.08em}.disclosure{color:#77736f;font-size:12px;line-height:1.5;margin-top:22px}footer{border-top:1px solid var(--line);margin-top:55px;padding-top:24px;color:#77736f;font-size:12px}@media(max-width:720px){header{display:block}.tag{margin-top:8px}.look{grid-template-columns:1fr}.image{min-height:390px}.hero{margin-top:35px}}
+:root{--bg:#101010;--panel:#171717;--text:#f6f5f1;--muted:#a7a5a1;--line:#303030}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1050px;margin:0 auto;padding:0 28px 65px}
+header{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding:29px 0 26px}
+.brand{font-family:Georgia,serif;font-size:24px;letter-spacing:.19em;font-weight:400}
+.header-note,.eyebrow{font-size:11px;letter-spacing:.19em;text-transform:uppercase;color:var(--muted)}
+.hero{padding:74px 0 55px}
+.hero h1{margin:14px 0 0;font-family:Georgia,serif;font-size:clamp(46px,8vw,83px);font-weight:400;line-height:1;letter-spacing:-.035em}
+.look{display:grid;grid-template-columns:1.08fr .92fr;background:var(--panel);border:1px solid var(--line)}
+.look-image{background:#fff;min-width:0}
+.look-image img{display:block;width:100%;height:auto;aspect-ratio:2/3;object-fit:contain;image-rendering:auto}
+.details{display:flex;flex-direction:column;justify-content:center;min-width:0;padding:clamp(25px,5vw,60px)}
+.details h2{font-family:Georgia,serif;font-size:clamp(31px,3.7vw,48px);line-height:1.12;letter-spacing:-.02em;font-weight:400;margin:18px 0 38px}
+.shop{display:flex;align-items:center;justify-content:space-between;text-decoration:none;color:var(--text);padding:20px 1px;border-top:1px solid var(--line);font-size:14px;letter-spacing:.045em;transition:opacity .2s}
+.shop:last-of-type{border-bottom:1px solid var(--line)}
+.shop:hover{opacity:.65}
+.shop .arrow{font-size:20px;font-weight:300}
+footer{color:var(--muted);font-size:11px;letter-spacing:.04em;padding-top:35px}
+@media(max-width:700px){.wrap{padding:0 17px 50px}header{padding:21px 0}.brand{font-size:19px}.header-note{font-size:9px}.hero{padding:55px 0 38px}.look{grid-template-columns:1fr}.details{padding:30px 25px 34px}.details h2{margin:14px 0 22px}.shop{padding:16px 0}}
 </style>
 </head>
-<body><div class="wrap">
-<header><div class="brand">DARA STYLES</div><div class="tag">dark fits · street style · outfit inspo</div></header>
-<section class="hero"><div class="eyebrow">Curated outfit inspiration</div><h1>Shop<br>my looks.</h1><p>Complete outfits, styled into one mood. Tap any piece below to shop the exact or linked item.</p></section>
-<section class="look">
-<div class="image" style="padding:0;min-height:0;background:#fff"><img src="look-001.webp?v=2" alt="Look 001 — front-facing grey wrap top and black flared trousers on a clean white background" width="520" height="780" style="display:block;width:100%;height:auto" decoding="async"></div>
-<div><div class="eyebrow">Look 001</div><h2>Stylish Comfortable Outwear</h2><p class="desc">Easy, comfortable pieces styled for an effortless everyday look. Explore the two linked items below.</p>
-<div class="item"><span>Shop piece 01</span><a href="https://onelink.shein.com/54/62w9te0xor4x?ismg_ol=Cwpyup6BRDk_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop piece 01 on SHEIN">SHOP NOW ↗</a></div>
-<div class="item"><span>Shop piece 02</span><a href="https://onelink.shein.com/54/62wanz06io1j?ismg_ol=7OSj6W6WVl2_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop piece 02 on SHEIN">SHOP NOW ↗</a></div>
-<p class="disclosure">Affiliate disclosure: Some shopping links are affiliate links. I may earn a commission if you purchase through them, at no extra cost to you.</p>
+<body>
+<div class="wrap">
+<header><div class="brand">DARA STYLES</div><div class="header-note">everyday style</div></header>
+<main>
+<section class="hero"><div class="eyebrow">outfit inspiration</div><h1>shop my looks.</h1></section>
+<section class="look" aria-label="Look 001">
+<div class="look-image"><img src="look-001.webp?v=3" alt="Grey wrap top styled with black flared trousers on white" width="900" height="1350" decoding="async" fetchpriority="high"></div>
+<div class="details">
+<div class="eyebrow">look 001</div>
+<h2>the grey edit.</h2>
+<a class="shop" href="https://onelink.shein.com/54/62w9te0xor4x?ismg_ol=Cwpyup6BRDk_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the grey top on SHEIN"><span>shop the top</span><span class="arrow">↗</span></a>
+<a class="shop" href="https://onelink.shein.com/54/62wanz06io1j?ismg_ol=7OSj6W6WVl2_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the black flared pants on SHEIN"><span>shop the pants</span><span class="arrow">↗</span></a>
 </div>
 </section>
-<footer>© Dara Styles · Outfit inspiration & curated links</footer>
-</div></body></html>
+</main>
+<footer>Some links are affiliate links. I may earn a commission at no extra cost to you.</footer>
+</div>
+</body>
+</html>
