@@ -1,149 +1,67 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#101010">
-<title>Dara Styles — Shop My Looks</title>
-<style>
-:root{--bg:#101010;--panel:#171717;--text:#f6f5f1;--muted:#a7a5a1;--line:#303030}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}
-.wrap{max-width:1050px;margin:0 auto;padding:0 28px 65px}
-header{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding:29px 0 26px}
-.brand{font-family:Georgia,serif;font-size:24px;letter-spacing:.19em;font-weight:400}
-.header-note,.eyebrow{font-size:11px;letter-spacing:.19em;text-transform:uppercase;color:var(--muted)}
-.hero{padding:74px 0 55px}
-.hero h1{margin:14px 0 0;font-family:Georgia,serif;font-size:clamp(46px,8vw,83px);font-weight:400;line-height:1;letter-spacing:-.035em}
-.look{display:grid;grid-template-columns:1.08fr .92fr;background:var(--panel);border:1px solid var(--line)}
-.look + .look{margin-top:32px}
-.look-image{background:#fff;min-width:0;display:flex;align-items:center;justify-content:center;padding:24px}
-.look-image img{display:block;width:100%;max-width:300px;height:auto;aspect-ratio:2/3;object-fit:contain;image-rendering:auto}
-.details{display:flex;flex-direction:column;justify-content:center;min-width:0;padding:clamp(25px,5vw,60px)}
-.details h2{font-family:Georgia,serif;font-size:clamp(31px,3.7vw,48px);line-height:1.12;letter-spacing:-.02em;font-weight:400;margin:18px 0 38px}
-.shop{display:flex;align-items:center;justify-content:space-between;text-decoration:none;color:var(--text);padding:20px 1px;border-top:1px solid var(--line);font-size:14px;letter-spacing:.045em;transition:opacity .2s}
-.shop:last-of-type{border-bottom:1px solid var(--line)}
-.shop:hover{opacity:.65}
-.shop .arrow{font-size:20px;font-weight:300}
-footer{color:var(--muted);font-size:11px;letter-spacing:.04em;padding-top:35px}
-@media(max-width:700px){.wrap{padding:0 17px 50px}header{padding:21px 0}.brand{font-size:19px}.header-note{font-size:9px}.hero{padding:55px 0 38px}.look{grid-template-columns:1fr}.details{padding:30px 25px 34px}.details h2{margin:14px 0 22px}.shop{padding:16px 0}}
-</style>
-</head>
-<body>
-<div class="wrap">
-<header><div class="brand">DARA STYLES</div><div class="header-note">everyday style</div></header>
-<main>
-<section class="hero"><div class="eyebrow">outfit inspiration</div><h1>shop my looks.</h1></section>
-<section class="look" aria-label="Look 001">
-<div class="look-image"><img src="look-001.webp?v=3" alt="Grey wrap top styled with black flared trousers on white" width="900" height="1350" decoding="async" fetchpriority="high"></div>
-<div class="details">
-<div class="eyebrow">look 001</div>
-<h2>the grey edit.</h2>
-<a class="shop" href="https://onelink.shein.com/54/62w9te0xor4x?ismg_ol=Cwpyup6BRDk_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the grey top on SHEIN"><span>shop the top</span><span class="arrow">↗</span></a>
-<a class="shop" href="https://onelink.shein.com/54/62wanz06io1j?ismg_ol=7OSj6W6WVl2_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the black flared pants on SHEIN"><span>shop the pants</span><span class="arrow">↗</span></a>
-</div>
-</section>
-<section class="look" id="look-002" aria-label="Look 002">
-<div class="look-image"><img src="look-002.jpg?v=1" alt="Black off-shoulder lace top with flared jeans and black slingback heels on white" width="1024" height="1536" decoding="async" loading="lazy"></div>
-<div class="details">
-<div class="eyebrow">look 002</div>
-<h2>the after-hours edit.</h2>
-<a class="shop" href="https://onelink.shein.com/56/64ohkcfztohq?ismg_ol=I48igqryRe8_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the black lace top on SHEIN"><span>shop the top</span><span class="arrow">↗</span></a>
-<a class="shop" href="https://onelink.shein.com/56/64oiqnnus1hq?ismg_ol=JZEy6PpbGDo_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the flared jeans on SHEIN"><span>shop the jeans</span><span class="arrow">↗</span></a>
-<a class="shop" href="https://onelink.shein.com/56/64ol05mt9mqi?ismg_ol=FBPQCLoV3rL_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the black slingback heels on SHEIN"><span>shop the heels</span><span class="arrow">↗</span></a>
-</div>
-</section>
-<section class="look" id="look-003" aria-label="Look 003">
-<div class="look-image"><img src="look-003.png?v=1" alt="Black sheer top, lace-up wide-leg trousers, pointed flats and hobo bag with a tortoiseshell phone case on white" width="1024" height="1536" decoding="async" loading="lazy"></div>
-<div class="details">
-<div class="eyebrow">look 003</div>
-<h2>the noir edit.</h2>
-<a class="shop" href="https://onelink.shein.com/56/64rzdzoanqjx?ismg_ol=47LGPcnwqT8_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the black sheer top on SHEIN"><span>shop the top</span><span class="arrow">↗</span></a>
-<a class="shop" href="https://onelink.shein.com/56/64ry6uuyyg3x?ismg_ol=Kkv9ZfLIoIi_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the black lace-up pants on SHEIN"><span>shop the pants</span><span class="arrow">↗</span></a>
-<a class="shop" href="https://onelink.shein.com/56/64rz9zn1dmk3?ismg_ol=1AOJyqK2stN_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the black pointed flats on SHEIN"><span>shop the flats</span><span class="arrow">↗</span></a>
-<a class="shop" href="https://onelink.shein.com/56/64rzj3664ua6?ismg_ol=5gWwKgpoGac_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the black hobo bag on SHEIN"><span>shop the bag</span><span class="arrow">↗</span></a>
-<a class="shop" href="https://onelink.shein.com/56/64rzq9n7w0zu?ismg_ol=LZqbjyeBb8L_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the tortoiseshell phone case on SHEIN"><span>shop the phone case</span><span class="arrow">↗</span></a>
-</div>
-</section>
-<section class="look" id="look-004" aria-label="Look 004">
-<div class="look-image"><img src="look-004.jpg?v=2" alt="Black ruched square-neck top above chocolate brown double-belt wide-leg trousers on white" width="1024" height="1536" decoding="async" loading="lazy"></div>
-<div class="details">
-<div class="eyebrow">look 004</div>
-<h2>shop this look.</h2>
-<a class="shop" href="https://onelink.shein.com/57/65e1darpx5pe?ismg_ol=AR4ibOZJXM1_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the black ruched top on SHEIN"><span>shop the top</span><span class="arrow">↗</span></a>
-<a class="shop" href="https://onelink.shein.com/57/65dzn79mf1mo?ismg_ol=6YSxNYCKspB_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the chocolate brown wide-leg trousers on SHEIN"><span>shop the pants</span><span class="arrow">↗</span></a>
-</div>
-</section>
-<section class="look" id="look-005" aria-label="Look 005">
-<div class="look-image"><img src="look-005.png" alt="Mint leopard graphic tank, grey cargo jeans, black kitten-heel boots and burgundy bag on white" width="1024" height="1536" decoding="async" loading="lazy"></div>
-<div class="details">
-<div class="eyebrow">look 005</div>
-<h2>street instinct.</h2>
-<a class="shop" href="https://onelink.shein.com/57/65h6st4fj8cx?ismg_ol=DnAp81u3Bpt_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the mint leopard graphic tank on SHEIN"><span>shop the top</span><span class="arrow">↗</span></a>
-<a class="shop" href="https://onelink.shein.com/57/65h6pyiu1q31?ismg_ol=HiY1ix6l40b_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the grey wide-leg cargo jeans on SHEIN"><span>shop the pants</span><span class="arrow">↗</span></a>
-<a class="shop" href="https://onelink.shein.com/57/65h7953nhmpn?ismg_ol=IWJhNsOZnPH_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the black slouchy kitten-heel boots on SHEIN"><span>shop the boots</span><span class="arrow">↗</span></a>
-<a class="shop" href="https://onelink.shein.com/57/65h7hd29ztb0?ismg_ol=4Oh35KHCjnp_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the burgundy leopard-lined bag on SHEIN"><span>shop the bag</span><span class="arrow">↗</span></a>
-</div>
-</section>
-<section class="look" id="look-006" aria-label="Look 006">
-<div class="look-image"><img src="look-006.png" alt="Black hooded jacket, white graphic top, faded blue flared jeans and silver layered necklaces on white" width="1024" height="1536" decoding="async" loading="lazy"></div>
-<div class="details">
-<div class="eyebrow">look 006</div>
-<h2>midnight rebel.</h2>
-<a class="shop" href="https://onelink.shein.com/57/65hb5a9llzjj?ismg_ol=Kml1NuIyEa4_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the black hooded jacket on SHEIN"><span>shop the jacket</span><span class="arrow">↗</span></a>
-<a class="shop" href="https://onelink.shein.com/57/65hbb1fufqx9?ismg_ol=LRsBfXeWOBz_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the white graphic top on SHEIN"><span>shop the top</span><span class="arrow">↗</span></a>
-<a class="shop" href="https://onelink.shein.com/57/65hbnv55ntxl?ismg_ol=HdhgtwZBBQQ_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the blue flared jeans on SHEIN"><span>shop the jeans</span><span class="arrow">↗</span></a>
-<a class="shop" href="https://onelink.shein.com/57/65hbuxo2bo0r?ismg_ol=IRBowM8n3oG_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the layered spider and cross necklaces on SHEIN"><span>shop the necklaces</span><span class="arrow">↗</span></a>
-</div>
-</section>
-<section class="look" id="look-007" aria-label="Look 007">
-<div class="look-image"><img src="look-007.png" alt="Olive biker jacket, black ribbed tank, front and back views of washed black denim shorts, black knit beanie and knee-high boots on white" width="1024" height="1536" decoding="async" loading="lazy"></div>
-<div class="details">
-<div class="eyebrow">look 007</div>
-<h2>olive edge.</h2>
-<a class="shop" href="https://onelink.shein.com/57/65hd0p5ondl8?ismg_ol=GFpKNoJ23Ar_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the olive biker jacket on SHEIN"><span>shop the jacket</span><span class="arrow">↗</span></a>
-<a class="shop" href="https://onelink.shein.com/57/65hd8x4bwyat?ismg_ol=7a5ddV9T0E5_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the black ribbed tank on SHEIN"><span>shop the top</span><span class="arrow">↗</span></a>
-<a class="shop" href="https://onelink.shein.com/57/65hdcz4jdrms?ismg_ol=ICRhdqt21To_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the washed black denim shorts on SHEIN"><span>shop the shorts</span><span class="arrow">↗</span></a>
-<a class="shop" href="https://onelink.shein.com/57/65hdgffkd677?ismg_ol=CWISO7t9VJA_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the black knee-high boots on SHEIN"><span>shop the boots</span><span class="arrow">↗</span></a>
-<a class="shop" href="https://onelink.shein.com/57/65hdl929vyao?ismg_ol=B3MQ2ZxWIj0_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the black knit beanie on SHEIN"><span>shop the beanie</span><span class="arrow">↗</span></a>
-</div>
-</section>
-<section class="look" id="look-008" aria-label="Look 008">
-<div class="look-image"><img src="look-008.png" alt="White off-shoulder top, black eyelet shorts, black strappy knee-high boots and silver oval pendant necklace on white" width="1024" height="1536" decoding="async" loading="lazy"></div>
-<div class="details">
-<div class="eyebrow">look 008</div>
-<h2>silver afterdark.</h2>
-<a class="shop" href="https://onelink.shein.com/58/65zukyw32skb?ismg_ol=BWo7a8OhDG2_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the white off-shoulder top on SHEIN"><span>shop the top</span><span class="arrow">↗</span></a>
-<a class="shop" href="https://onelink.shein.com/58/65zuv9twb7tq?ismg_ol=D3GDvG5OoHf_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the black eyelet shorts on SHEIN"><span>shop the shorts</span><span class="arrow">↗</span></a>
-<a class="shop" href="https://onelink.shein.com/58/65zv1smkp1mc?ismg_ol=GKvs92IQHuY_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the black strappy knee-high boots on SHEIN"><span>shop the boots</span><span class="arrow">↗</span></a>
-<a class="shop" href="https://onelink.shein.com/58/65zvcfekke1g?ismg_ol=L5adpWsaUQK_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the silver double-oval pendant necklace on SHEIN"><span>shop the necklace</span><span class="arrow">↗</span></a>
-</div>
-</section>
-<section class="look" id="look-009" aria-label="Look 009">
-<div class="look-image"><img src="look-009.png" alt="White polka-dot off-shoulder top with matching scarf, black wide-leg jeans, black platform Mary Jane heels and silver hoop earrings on white" width="1024" height="1536" decoding="async" loading="lazy"></div>
-<div class="details">
-<div class="eyebrow">look 009</div>
-<h2>dot after dark.</h2>
-<a class="shop" href="https://onelink.shein.com/58/66alynd6p8br?ismg_ol=7TJZbiGHJuo_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the polka-dot off-shoulder top on SHEIN"><span>shop the top</span><span class="arrow">↗</span></a>
-<a class="shop" href="https://onelink.shein.com/58/66amjwx6eio3?ismg_ol=7A5fkSJZD84_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the black wide-leg jeans on SHEIN"><span>shop the jeans</span><span class="arrow">↗</span></a>
-<a class="shop" href="https://onelink.shein.com/58/66amy003z9yy?ismg_ol=FtIskAVyAPb_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the black platform Mary Jane heels on SHEIN"><span>shop the shoes</span><span class="arrow">↗</span></a>
-<a class="shop" href="https://onelink.shein.com/58/66an5ce8iys8?ismg_ol=BFWtn9OoGU5_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the silver hoop earrings on SHEIN"><span>shop the earrings</span><span class="arrow">↗</span></a>
-</div>
-</section>
-<section class="look" id="look-010" aria-label="Look 010">
-<div class="look-image"><img src="look-010.png" alt="Grey striped zip hoodie, white tank, front and back views of black denim shorts, pink leg warmers and ivory bow ballet flats on white" width="1024" height="1536" decoding="async" loading="lazy"></div>
-<div class="details">
-<div class="eyebrow">look 010</div>
-<h2>blush rebel.</h2>
-<a class="shop" href="https://onelink.shein.com/58/66lv47k2iybw?ismg_ol=Kjt31xlAAyu_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the grey and white striped zip hoodie on SHEIN"><span>shop the hoodie</span><span class="arrow">↗</span></a>
-<a class="shop" href="https://onelink.shein.com/58/66lvspiwrsd4?ismg_ol=GH5flPCxVN3_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the white scoop-neck tank top on SHEIN"><span>shop the top</span><span class="arrow">↗</span></a>
-<a class="shop" href="https://onelink.shein.com/58/66lvxf7jjhv3?ismg_ol=1IhzAkWFYe6_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the washed black denim shorts on SHEIN"><span>shop the shorts</span><span class="arrow">↗</span></a>
-<a class="shop" href="https://onelink.shein.com/58/66lwjq94ej2i?ismg_ol=83sL0V8kT9I_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the ivory bow ballet flats on SHEIN"><span>shop the shoes</span><span class="arrow">↗</span></a>
-<a class="shop" href="https://onelink.shein.com/58/66lw68vioby0?ismg_ol=6PL1slYZsEv_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the pink ribbed leg warmers on SHEIN"><span>shop the leg warmers</span><span class="arrow">↗</span></a>
-</div>
-</section>
-</main>
-<footer>Some links are affiliate links. I may earn a commission at no extra cost to you.</footer>
-</div>
-</body>
-</html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101010"><title>Dara Styles — Shop My Looks</title><style>
+:root{--bg:#101010;--panel:#171717;--text:#f6f5f1;--muted:#a7a5a1;--line:#303030}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}.wrap{max-width:1050px;margin:0 auto;padding:0 28px 65px}header{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding:29px 0 26px}.brand{font-family:Georgia,serif;font-size:24px;letter-spacing:.19em;font-weight:400}.header-note,.eyebrow{font-size:11px;letter-spacing:.19em;text-transform:uppercase;color:var(--muted)}.hero{padding:74px 0 55px}.hero h1{margin:14px 0 0;font-family:Georgia,serif;font-size:clamp(46px,8vw,83px);font-weight:400;line-height:1;letter-spacing:-.035em}.look{display:grid;grid-template-columns:1.08fr .92fr;background:var(--panel);border:1px solid var(--line)}.look + .look{margin-top:32px}.look-image{background:#fff;min-width:0;display:flex;align-items:center;justify-content:center;padding:24px}.look-image img{display:block;width:100%;max-width:300px;height:auto;aspect-ratio:2/3;object-fit:contain;image-rendering:auto}.details{display:flex;flex-direction:column;justify-content:center;min-width:0;padding:clamp(25px,5vw,60px)}.details h2{font-family:Georgia,serif;font-size:clamp(31px,3.7vw,48px);line-height:1.12;letter-spacing:-.02em;font-weight:400;margin:18px 0 38px}.shop{display:flex;align-items:center;justify-content:space-between;text-decoration:none;color:var(--text);padding:20px 1px;border-top:1px solid var(--line);font-size:14px;letter-spacing:.045em;transition:opacity .2s}.shop:last-of-type{border-bottom:1px solid var(--line)}.shop:hover{opacity:.65}.shop .arrow{font-size:20px;font-weight:300}.code{display:block;color:var(--muted);font-size:11px;letter-spacing:.06em;margin-top:6px}.shop-label{display:block}footer{color:var(--muted);font-size:11px;letter-spacing:.04em;padding-top:35px}@media(max-width:700px){.wrap{padding:0 17px 50px}header{padding:21px 0}.brand{font-size:19px}.header-note{font-size:9px}.hero{padding:55px 0 38px}.look{grid-template-columns:1fr}.details{padding:30px 25px 34px}.details h2{margin:14px 0 22px}.shop{padding:16px 0}}</style></head><body><div class="wrap"><header><div class="brand">DARA STYLES</div><div class="header-note">everyday style</div></header><main><section class="hero"><div class="eyebrow">outfit inspiration</div><h1>shop my looks.</h1></section>
+<section class="look" id="look-001" aria-label="Look 001"><div class="look-image"><img src="look-001.webp?v=3" alt="the grey edit. outfit products" width="1024" height="1536" decoding="async" loading="lazy"></div><div class="details"><div class="eyebrow">look 001</div><h2>the grey edit.</h2>
+<a class="shop" href="https://onelink.shein.com/54/62w9te0xor4x?ismg_ol=Cwpyup6BRDk_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the top on SHEIN"><span class="shop-label">shop the top</span><span class="arrow">↗</span></a>
+<a class="shop" href="https://onelink.shein.com/54/62wanz06io1j?ismg_ol=7OSj6W6WVl2_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the pants on SHEIN"><span class="shop-label">shop the pants</span><span class="arrow">↗</span></a>
+</div></section>
+<section class="look" id="look-002" aria-label="Look 002"><div class="look-image"><img src="look-002.jpg?v=1" alt="the after-hours edit. outfit products" width="1024" height="1536" decoding="async" loading="lazy"></div><div class="details"><div class="eyebrow">look 002</div><h2>the after-hours edit.</h2>
+<a class="shop" href="https://onelink.shein.com/56/64ohkcfztohq?ismg_ol=I48igqryRe8_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the top on SHEIN"><span class="shop-label">shop the top</span><span class="arrow">↗</span></a>
+<a class="shop" href="https://onelink.shein.com/56/64oiqnnus1hq?ismg_ol=JZEy6PpbGDo_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the jeans on SHEIN"><span class="shop-label">shop the jeans</span><span class="arrow">↗</span></a>
+<a class="shop" href="https://onelink.shein.com/56/64ol05mt9mqi?ismg_ol=FBPQCLoV3rL_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the heels on SHEIN"><span class="shop-label">shop the heels</span><span class="arrow">↗</span></a>
+</div></section>
+<section class="look" id="look-003" aria-label="Look 003"><div class="look-image"><img src="look-003.png?v=1" alt="the noir edit. outfit products" width="1024" height="1536" decoding="async" loading="lazy"></div><div class="details"><div class="eyebrow">look 003</div><h2>the noir edit.</h2>
+<a class="shop" href="https://onelink.shein.com/56/64rzdzoanqjx?ismg_ol=47LGPcnwqT8_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the top on SHEIN"><span class="shop-label">shop the top</span><span class="arrow">↗</span></a>
+<a class="shop" href="https://onelink.shein.com/56/64ry6uuyyg3x?ismg_ol=Kkv9ZfLIoIi_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the pants on SHEIN"><span class="shop-label">shop the pants</span><span class="arrow">↗</span></a>
+<a class="shop" href="https://onelink.shein.com/56/64rz9zn1dmk3?ismg_ol=1AOJyqK2stN_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the flats on SHEIN"><span class="shop-label">shop the flats</span><span class="arrow">↗</span></a>
+<a class="shop" href="https://onelink.shein.com/56/64rzj3664ua6?ismg_ol=5gWwKgpoGac_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the bag on SHEIN"><span class="shop-label">shop the bag</span><span class="arrow">↗</span></a>
+<a class="shop" href="https://onelink.shein.com/56/64rzq9n7w0zu?ismg_ol=LZqbjyeBb8L_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the phone case on SHEIN"><span class="shop-label">shop the phone case</span><span class="arrow">↗</span></a>
+</div></section>
+<section class="look" id="look-004" aria-label="Look 004"><div class="look-image"><img src="look-004.jpg?v=2" alt="shop this look. outfit products" width="1024" height="1536" decoding="async" loading="lazy"></div><div class="details"><div class="eyebrow">look 004</div><h2>shop this look.</h2>
+<a class="shop" href="https://onelink.shein.com/57/65e1darpx5pe?ismg_ol=AR4ibOZJXM1_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the top on SHEIN"><span class="shop-label">shop the top</span><span class="arrow">↗</span></a>
+<a class="shop" href="https://onelink.shein.com/57/65dzn79mf1mo?ismg_ol=6YSxNYCKspB_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the pants on SHEIN"><span class="shop-label">shop the pants</span><span class="arrow">↗</span></a>
+</div></section>
+<section class="look" id="look-005" aria-label="Look 005"><div class="look-image"><img src="look-005.png" alt="street instinct. outfit products" width="1024" height="1536" decoding="async" loading="lazy"></div><div class="details"><div class="eyebrow">look 005</div><h2>street instinct.</h2>
+<a class="shop" href="https://onelink.shein.com/57/65h6st4fj8cx?ismg_ol=DnAp81u3Bpt_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the top on SHEIN"><span class="shop-label">shop the top</span><span class="arrow">↗</span></a>
+<a class="shop" href="https://onelink.shein.com/57/65h6pyiu1q31?ismg_ol=HiY1ix6l40b_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the pants on SHEIN"><span class="shop-label">shop the pants</span><span class="arrow">↗</span></a>
+<a class="shop" href="https://onelink.shein.com/57/65h7953nhmpn?ismg_ol=IWJhNsOZnPH_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the boots on SHEIN"><span class="shop-label">shop the boots</span><span class="arrow">↗</span></a>
+<a class="shop" href="https://onelink.shein.com/57/65h7hd29ztb0?ismg_ol=4Oh35KHCjnp_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the bag on SHEIN"><span class="shop-label">shop the bag</span><span class="arrow">↗</span></a>
+</div></section>
+<section class="look" id="look-006" aria-label="Look 006"><div class="look-image"><img src="look-006.png" alt="midnight rebel. outfit products" width="1024" height="1536" decoding="async" loading="lazy"></div><div class="details"><div class="eyebrow">look 006</div><h2>midnight rebel.</h2>
+<a class="shop" href="https://onelink.shein.com/57/65hb5a9llzjj?ismg_ol=Kml1NuIyEa4_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the jacket on SHEIN"><span class="shop-label">shop the jacket</span><span class="arrow">↗</span></a>
+<a class="shop" href="https://onelink.shein.com/57/65hbb1fufqx9?ismg_ol=LRsBfXeWOBz_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the top on SHEIN"><span class="shop-label">shop the top</span><span class="arrow">↗</span></a>
+<a class="shop" href="https://onelink.shein.com/57/65hbnv55ntxl?ismg_ol=HdhgtwZBBQQ_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the jeans on SHEIN"><span class="shop-label">shop the jeans</span><span class="arrow">↗</span></a>
+<a class="shop" href="https://onelink.shein.com/57/65hbuxo2bo0r?ismg_ol=IRBowM8n3oG_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the necklaces on SHEIN"><span class="shop-label">shop the necklaces</span><span class="arrow">↗</span></a>
+</div></section>
+<section class="look" id="look-007" aria-label="Look 007"><div class="look-image"><img src="look-007.png" alt="olive edge. outfit products" width="1024" height="1536" decoding="async" loading="lazy"></div><div class="details"><div class="eyebrow">look 007</div><h2>olive edge.</h2>
+<a class="shop" href="https://onelink.shein.com/57/65hd0p5ondl8?ismg_ol=GFpKNoJ23Ar_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the jacket on SHEIN"><span class="shop-label">shop the jacket</span><span class="arrow">↗</span></a>
+<a class="shop" href="https://onelink.shein.com/57/65hd8x4bwyat?ismg_ol=7a5ddV9T0E5_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the top on SHEIN"><span class="shop-label">shop the top</span><span class="arrow">↗</span></a>
+<a class="shop" href="https://onelink.shein.com/57/65hdcz4jdrms?ismg_ol=ICRhdqt21To_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the shorts on SHEIN"><span class="shop-label">shop the shorts</span><span class="arrow">↗</span></a>
+<a class="shop" href="https://onelink.shein.com/57/65hdgffkd677?ismg_ol=CWISO7t9VJA_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the boots on SHEIN"><span class="shop-label">shop the boots</span><span class="arrow">↗</span></a>
+<a class="shop" href="https://onelink.shein.com/57/65hdl929vyao?ismg_ol=B3MQ2ZxWIj0_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the beanie on SHEIN"><span class="shop-label">shop the beanie</span><span class="arrow">↗</span></a>
+</div></section>
+<section class="look" id="look-008" aria-label="Look 008"><div class="look-image"><img src="look-008.png" alt="silver afterdark. outfit products" width="1024" height="1536" decoding="async" loading="lazy"></div><div class="details"><div class="eyebrow">look 008</div><h2>silver afterdark.</h2>
+<a class="shop" href="https://onelink.shein.com/58/65zukyw32skb?ismg_ol=BWo7a8OhDG2_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the top on SHEIN"><span class="shop-label">shop the top</span><span class="arrow">↗</span></a>
+<a class="shop" href="https://onelink.shein.com/58/65zuv9twb7tq?ismg_ol=D3GDvG5OoHf_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the shorts on SHEIN"><span class="shop-label">shop the shorts</span><span class="arrow">↗</span></a>
+<a class="shop" href="https://onelink.shein.com/58/65zv1smkp1mc?ismg_ol=GKvs92IQHuY_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the boots on SHEIN"><span class="shop-label">shop the boots</span><span class="arrow">↗</span></a>
+<a class="shop" href="https://onelink.shein.com/58/65zvcfekke1g?ismg_ol=L5adpWsaUQK_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the necklace on SHEIN"><span class="shop-label">shop the necklace</span><span class="arrow">↗</span></a>
+</div></section>
+<section class="look" id="look-009" aria-label="Look 009"><div class="look-image"><img src="look-009.png" alt="dot after dark. outfit products" width="1024" height="1536" decoding="async" loading="lazy"></div><div class="details"><div class="eyebrow">look 009</div><h2>dot after dark.</h2>
+<a class="shop" href="https://onelink.shein.com/58/66alynd6p8br?ismg_ol=7TJZbiGHJuo_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the top on SHEIN"><span class="shop-label">shop the top</span><span class="arrow">↗</span></a>
+<a class="shop" href="https://onelink.shein.com/58/66amjwx6eio3?ismg_ol=7A5fkSJZD84_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the jeans on SHEIN"><span class="shop-label">shop the jeans</span><span class="arrow">↗</span></a>
+<a class="shop" href="https://onelink.shein.com/58/66amy003z9yy?ismg_ol=FtIskAVyAPb_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the shoes on SHEIN"><span class="shop-label">shop the shoes</span><span class="arrow">↗</span></a>
+<a class="shop" href="https://onelink.shein.com/58/66an5ce8iys8?ismg_ol=BFWtn9OoGU5_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the earrings on SHEIN"><span class="shop-label">shop the earrings</span><span class="arrow">↗</span></a>
+</div></section>
+<section class="look" id="look-010" aria-label="Look 010"><div class="look-image"><img src="look-010.png" alt="blush rebel. outfit products" width="1024" height="1536" decoding="async" loading="lazy"></div><div class="details"><div class="eyebrow">look 010</div><h2>blush rebel.</h2>
+<a class="shop" href="https://onelink.shein.com/58/66lv47k2iybw?ismg_ol=Kjt31xlAAyu_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the hoodie on SHEIN"><span class="shop-label">shop the hoodie</span><span class="arrow">↗</span></a>
+<a class="shop" href="https://onelink.shein.com/58/66lvspiwrsd4?ismg_ol=GH5flPCxVN3_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the top on SHEIN"><span class="shop-label">shop the top</span><span class="arrow">↗</span></a>
+<a class="shop" href="https://onelink.shein.com/58/66lvxf7jjhv3?ismg_ol=1IhzAkWFYe6_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the shorts on SHEIN"><span class="shop-label">shop the shorts</span><span class="arrow">↗</span></a>
+<a class="shop" href="https://onelink.shein.com/58/66lwjq94ej2i?ismg_ol=83sL0V8kT9I_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the shoes on SHEIN"><span class="shop-label">shop the shoes</span><span class="arrow">↗</span></a>
+<a class="shop" href="https://onelink.shein.com/58/66lw68vioby0?ismg_ol=6PL1slYZsEv_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the leg warmers on SHEIN"><span class="shop-label">shop the leg warmers</span><span class="arrow">↗</span></a>
+</div></section>
+<section class="look" id="look-011" aria-label="Look 011"><div class="look-image"><img src="look-011.png" alt="plaid noir. outfit products" width="1024" height="1536" decoding="async" loading="lazy"></div><div class="details"><div class="eyebrow">look 011</div><h2>plaid noir.</h2>
+<a class="shop" href="https://onelink.shein.com/60/68bp5lh8nwhy?ismg_ol=B1apptdKMu6_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the top on SHEIN"><span class="shop-label">shop the top<span class="code">SHEIN code: K543ETJ</span></span><span class="arrow">↗</span></a>
+<a class="shop" href="https://onelink.shein.com/60/68bpl9s2vldv?ismg_ol=JRxnNtUFcJF_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the skirt on SHEIN"><span class="shop-label">shop the skirt<span class="code">SHEIN code: Y6Y2EV3</span></span><span class="arrow">↗</span></a>
+<a class="shop" href="https://onelink.shein.com/60/68bppnmjva4i?ismg_ol=0Jwf8PCeTqr_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the boots on SHEIN"><span class="shop-label">shop the boots<span class="code">SHEIN code: ZBF3LFY</span></span><span class="arrow">↗</span></a>
+<a class="shop" href="https://onelink.shein.com/60/68bq57zbgtn1?ismg_ol=CaHDwziWw08_01_KOC-C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Shop the silver cuff on SHEIN"><span class="shop-label">shop the silver cuff<span class="code">SHEIN code: 25XU9WW</span></span><span class="arrow">↗</span></a>
+</div></section>
+</main><footer>Some links are affiliate links. I may earn a commission at no extra cost to you.</footer></div></body></html>
